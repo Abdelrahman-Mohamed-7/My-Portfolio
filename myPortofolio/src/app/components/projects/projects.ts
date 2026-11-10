@@ -48,22 +48,22 @@ export class Projects {
       {
         id: 3,
         name: 'Flight Booking API',
-        cover: 'assets/flighBooking.png',
+        cover: 'assets/flightBooking.png', // ده المسار اللي في الصورة بتاعتك
         GitHub: 'https://github.com/Abdelrahman-Mohamed-7/Flight-Booking',
         description: 'Architected a scalable, multi-tier flight reservation system consisting of a centralized RESTful Web API and two separate MVC client applications (Customer and Employee portals) following the Repository and Service patterns. Engineered secure authentication and role-based authorization using JWT (JSON Web Tokens) and ASP.NET Core Identity, ensuring strict data access control between customers and employees. Designed and optimized a relational database using Entity Framework Core (Code-First). Implemented Fluent API for complex entity configurations, relationships, and data seeding (Roles, Users, Cities, Airports, Airlines). Developed a seamless booking workflow where customers submit flight requests, and employees manage (approve/reject) them via an interactive, statistics-driven Admin Dashboard. Utilized AutoMapper for efficient object-to-object mapping between Data Transfer Objects (DTOs) and Entity models, ensuring clean separation of concerns.',
         images: [
-          'assets/FlighBookingAPI1.png',
-          'assets/FlighBookingAPI2.png',
-          'assets/FlighBookingAPI3.png',
-          'assets/FlighBookingAPI4.png',
-          'assets/FlighBookingControlPanal2.png',
-          'assets/FlighBookingControlPanal3.png',
-          'assets/FlighBookingControlPanal4.png',
-          'assets/FlighBookingCustomer1.png',
-          'assets/FlighBookingCustomer2.png',
-          'assets/FlighBookingCustomer3.png',
-          'assets/FlighBookingCustomer4.png',
-          'assets/FlighBookingCustomer5.png'
+          'assets/FlightBookingAPI1.png',
+          'assets/FlightBookingAPI2.png',
+          'assets/FlightBookingAPI3.png',
+          'assets/FlightBookingAPI4.png',
+          'assets/FlightBookingControlPanal2.png',
+          'assets/FlightBookingControlPanal3.png',
+          'assets/FlightBookingControlPanal4.png',
+          'assets/FlightBookingCustomer1.png',
+          'assets/FlightBookingCustomer2.png',
+          'assets/FlightBookingCustomer3.png',
+          'assets/FlightBookingCustomer4.png',
+          'assets/FlightBookingCustomer5.png'
         ]
       },
     ];
