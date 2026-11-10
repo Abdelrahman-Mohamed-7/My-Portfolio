@@ -1,0 +1,98 @@
+/* ===== Navbar ===== */
+.custom-navbar {
+  background: linear-gradient(90deg, #db7a2b 0%, #c96a1f 100%);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+  padding: 0.7rem 1rem;
+  transition: background 0.3s ease;
+}
+
+/* اللوجو / الاسم */
+.brand-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+  color: #2b1d14 !important;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.brand-text:hover {
+  transform: scale(1.05);
+  color: #fff !important;
+}
+
+/* اللينكات */
+.custom-navbar .nav-link {
+  color: #2b1d14 !important;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin: 0 0.3rem;
+  padding: 0.5rem 0.9rem !important;
+  border-radius: 8px;
+  position: relative;
+  transition: color 0.25s ease, background 0.25s ease;
+}
+
+/* تأثير hover: خلفية فاتحة */
+.custom-navbar .nav-link:hover {
+  color: #fff !important;
+  background: rgba(43, 29, 20, 0.25);
+}
+
+/* اللينك النشط */
+.custom-navbar .nav-link.active {
+  color: #fff !important;
+  background: rgba(43, 29, 20, 0.35);
+}
+
+/* خط سفلي متحرك (اختياري) */
+.custom-navbar .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background: #fff;
+  border-radius: 2px;
+  transition: width 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover::after,
+.custom-navbar .nav-link.active::after {
+  width: 60%;
+}
+
+/* زرار الموبايل */
+.custom-navbar .navbar-toggler {
+  border: 2px solid #2b1d14;
+  padding: 0.3rem 0.6rem;
+  border-radius: 8px;
+}
+
+.custom-navbar .navbar-toggler:focus {
+  box-shadow: 0 0 0 3px rgba(43, 29, 20, 0.3);
+}
+
+.custom-navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%232b1d14' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* على الموبايل: اللينكات تحت بعض بخلفية أوضح */
+@media (max-width: 991.98px) {
+  .custom-navbar .navbar-nav {
+    margin-top: 0.8rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid rgba(43, 29, 20, 0.2);
+  }
+
+  .custom-navbar .nav-link {
+    margin: 0.2rem 0;
+  }
+}
+
+/* sticky-top: ثابت فوق أثناء الـ scroll */
+.sticky-top {
+  z-index: 1030;
+}

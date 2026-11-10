@@ -1,0 +1,167 @@
+/* 1) الأنيميشن: الصورة تظهر بحركة ناعمة */
+*{
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.profile-img {
+  animation: fadeInUp 1s ease-out both;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* 2) الهوفر: الصورة تكبر + ظل */
+.profile-img:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* تعريف الأنيميشن */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.btn{
+   background-color: rgb(219, 122, 43);
+}
+.btn:hover{
+    background-color: rgb(136, 73, 21);
+    
+}
+/* ===================== */
+/* الاسم + الأنيميشن */
+/* ===================== */
+.hero-name {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(2rem, 5vw, 3.6rem);
+  font-weight: 900;
+  letter-spacing: -1px;
+  line-height: 1.15;
+  margin-bottom: 0.4rem;
+
+  background: linear-gradient(90deg, #ffb347, #ffcc33, #ff8c42, #ffb347);
+  background-size: 300% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation:
+    fadeInUp 0.8s ease-out both,
+    gradientShift 5s linear infinite;
+}
+
+.hero-role {
+  font-family: 'Poppins', sans-serif;
+  font-size: clamp(0.95rem, 1.8vw, 1.25rem);
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffd8a8;
+  margin-bottom: 0;
+}
+
+/* ===================== */
+/* About */
+/* ===================== */
+.about-section {
+  animation: fadeInUp 1s ease-out 0.3s both;
+}
+
+.about-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffb347;
+  margin-bottom: 0.6rem;
+  position: relative;
+  display: inline-block;
+}
+
+/* خط تحت About */
+.about-title::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 3px;
+  background: linear-gradient(90deg, #ffb347, transparent);
+  margin-top: 4px;
+  border-radius: 2px;
+}
+
+.about-text {
+  color: #f0e0cc;
+  font-size: 1rem;
+  line-height: 1.8;
+  max-width: 640px;
+}
+
+/* ===================== */
+/* Skills badges */
+/* ===================== */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .skills {
+    justify-content: flex-start;
+  }
+}
+
+.skill-badge {
+  display: inline-block;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #fff;
+  background: rgba(255, 179, 71, 0.15);
+  border: 1px solid rgba(255, 179, 71, 0.5);
+  border-radius: 999px;
+  transition: all 0.25s ease;
+  cursor: default;
+  animation: fadeInUp 0.6s ease-out both;
+}
+
+.skill-badge:hover {
+  background: rgba(255, 179, 71, 0.35);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(255, 179, 71, 0.3);
+}
+
+/* تأخير بسيط لكل badge عشان يظهروا واحد ورا التاني */
+.skill-badge:nth-child(1)  { animation-delay: 0.05s; }
+.skill-badge:nth-child(2)  { animation-delay: 0.10s; }
+.skill-badge:nth-child(3)  { animation-delay: 0.15s; }
+.skill-badge:nth-child(4)  { animation-delay: 0.20s; }
+.skill-badge:nth-child(5)  { animation-delay: 0.25s; }
+.skill-badge:nth-child(6)  { animation-delay: 0.30s; }
+.skill-badge:nth-child(7)  { animation-delay: 0.35s; }
+.skill-badge:nth-child(8)  { animation-delay: 0.40s; }
+.skill-badge:nth-child(9)  { animation-delay: 0.45s; }
+.skill-badge:nth-child(10) { animation-delay: 0.50s; }
+.skill-badge:nth-child(11) { animation-delay: 0.55s; }
+.skill-badge:nth-child(12) { animation-delay: 0.60s; }
+.skill-badge:nth-child(13) { animation-delay: 0.65s; }
+.skill-badge:nth-child(14) { animation-delay: 0.70s; }
+.skill-badge:nth-child(15) { animation-delay: 0.75s; }
+
+/* ===================== */
+/* الأنيميشن المشترك */
+/* ===================== */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes gradientShift {
+  0%   { background-position: 0% 50%; }
+  100% { background-position: 300% 50%; }
+}

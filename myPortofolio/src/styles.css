@@ -1,0 +1,17 @@
+/* ===== خلفية الموقع ===== */
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #2b1d14 0%, #3e2a1e 50%, #1f1510 100%);
+  background-attachment: fixed;
+  color: #f0e0cc;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* مهم: الـ root component بياخد نفس الخلفية عشان يغطي كل حاجة */
+app-root {
+  display: block;
+  min-height: 100vh;
+  background: transparent;
+}
